@@ -12,72 +12,24 @@
     <header>
         <h1>Weather Dashboard</h1>
     </header>
-
-    <form>
+  <div>
+    <form id="form">
         <div class="mb-3">
-          <label for="search" class="form-label">Email address</label>
+          <label for="search" class="form-label">Search for a City:</label>
           <input type="email" class="form-control" id="search" aria-describedby="emailHelp">
           <div id="searchHelp" class="form-text">Enter a city here.</div>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button id="submitBtn" type="submit" class="btn btn-primary">Search</button>
     </form>
 
-    <div class="card" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title" id="cityName">City</h5>
-          <h6 class="card-subtitle mb-2 text-muted">Today's Forecast</h6>
-          <p class="card-text" id="todayTemp">Temp:</p>
-          <p class="card-text" id="todayWind">Wind:</p>
-          <p class="card-text" id="todayHumid">Humidity:</p>
-          <p class="card-text" id="todayUV">UV Index:</p>
-        </div>
-      </div>
+    <div class="list-group" id="searchHistory"></div>
+  </div>
 
-    <div>
-        <h2>5-Day Forecast:</h2>
-        
-        <div class="card" style="width: 18rem;">
-            <div class="card-body">
-              <h5 class="card-title" id="date1">Date</h5>
-              <p class="card-text" id="day1Temp">Temp:</p>
-              <p class="card-text" id="day1Wind">Wind:</p>
-              <p class="card-text" id="day1Humid">Humidity:</p>
-              <p class="card-text" id="day1UV">UV Index:</p>
-            </div>
-
-            <div class="card-body">
-                <h5 class="card-title" id="date2">Date</h5>
-                <p class="card-text" id="day2Temp">Temp:</p>
-                <p class="card-text" id="day2Wind">Wind:</p>
-                <p class="card-text" id="day2Humid">Humidity:</p>
-                <p class="card-text" id="day2UV">UV Index:</p>
-              </div>
-
-              <div class="card-body">
-                <h5 class="card-title" id="date3">Date</h5>
-                <p class="card-text" id="day3Temp">Temp:</p>
-                <p class="card-text" id="day3Wind">Wind:</p>
-                <p class="card-text" id="day3Humid">Humidity:</p>
-                <p class="card-text" id="day3UV">UV Index:</p>
-              </div>
-
-              <div class="card-body">
-                <h5 class="card-title" id="date4">Date</h5>
-                <p class="card-text" id="day4Temp">Temp:</p>
-                <p class="card-text" id="day4Wind">Wind:</p>
-                <p class="card-text" id="day4Humid">Humidity:</p>
-                <p class="card-text" id="day4UV">UV Index:</p>
-              </div>
-
-              <div class="card-body">
-                <h5 class="card-title" id="date5">Date</h5>
-                <p class="card-text" id="day5Temp">Temp:</p>
-                <p class="card-text" id="day5Wind">Wind:</p>
-                <p class="card-text" id="day5Humid">Humidity:</p>
-                <p class="card-text" id="day5UV">UV Index:</p>
-              </div>
-          </div>
-
+    <div class="col-lg-9" id="today">
+      <section id="today"></section>
+      <section id="otherDays"></section>
     </div>
+
+   
     <script src="script.js"></script>
   </body>
